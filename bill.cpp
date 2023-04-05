@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+#include <cstring>
 
 using namespace std;
 
@@ -8,7 +9,11 @@ int main(){
 	
 	string firmname ="JBS SHOP";
 	cout<<"**************************"<<firmname<<"**************************"<<endl;
-	int ItomNo,Productname,Qyt,Amount;
+	int Qyt,Amount,TotalProduct,Productname,TotalAmount;
+	int a,x;
+//	char Productname[50] = "Productname";
+	
+
 	
 	
 	time_t now = time(0);
@@ -49,22 +54,66 @@ int main(){
 		cout<<"Day: Sunday";
 		break;
 	}
-		cout<<endl<<"Invoice no."<<ltm->tm_mday;
-		cout<<"0"<<1+ ltm->tm_mon;
-		cout<<"0"<<1900+ ltm->tm_year;
-		cout<<"0"<<ltm->tm_hour;
-		cout<<"0"<<ltm->tm_min;
-		cout<<ltm->tm_sec;
+	cout<<endl<<"Invoice no."<<ltm->tm_mday;
+	cout<<"0"<<1+ ltm->tm_mon;
+	cout<<"0"<<1900+ ltm->tm_year;
+	cout<<"0"<<ltm->tm_hour;
+	cout<<"0"<<ltm->tm_min;
+	cout<<ltm->tm_sec;
 		
+	cout<<endl<<endl<<"********************************************************************";
 		
+	cout<<endl<<"Enter number of Total Product :";
+	cin>>TotalProduct;
+	int *ItomNo = new int(TotalProduct);
+	
+	
+	
+	cout<<endl<<"Enter number of Total Product :";
+	cin>>TotalProduct;
+	int *arr =new int(TotalProduct);
+	
+	cout<<"Enter"<<TotalProduct<<"Productname"<<endl;
+	
+	for(Productname=0;Productname < TotalProduct;Productname++){
+		cin>>arr[Productname];
 		
-		cout<<endl<<endl<<"ItomNo."<<"*********"<<"Productname"<<"********"<<"Qyt"<<"********"<<"Amount";
+	}
+	
+	cout<<"Productname :";
+	for(Productname=0;Productname < TotalProduct;Productname++){
+		cin>>arr[Productname]>>" ";
 		
-		cout<<endl;
-		cin>>ItomNo;
-		cout<<"---------------";
-		cin>>Productname;
-		cout<<"---------------";
-		cin>>Qyt;
-}
 
+
+		
+//	for (ItomNo[a]=1;ItomNo[a]<=TotalProduct;ItomNo[a]++){
+//	   	cout<<endl<<"Enter ditels about ItomNo :"<<ItomNo[a];
+//		
+//	    cout <<endl<<"Enter Productname: ";
+//	    cin>>Productname;
+//		
+//	       	cout <<endl<<"Enter Qyt: ";
+//	       	cin>>Qyt;
+//		
+//	       	cout <<endl<<"Enter Amount of Product :";
+//	       	cin>>Amount;
+//	    	
+//	    	   
+//		}
+//	cout<<endl<<endl<<"ItomNo."<<"\t"<<"\t";
+//		 
+//		 for(ItomNo[a]=1; ItomNo[a]<=TotalProduct;ItomNo[a]++){
+//		 
+//			cout<<ItomNo[a]<<"\t"<<"\t";
+//		}
+//		
+//	cout<<endl<<endl<<"Productname.";
+//
+//		
+//	cout<<"\t"<<Productname[a];
+//
+//	
+
+    return 0;
+}
