@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div id="contenar" >
+        
+        <fieldset>
+            <legend><h1>form</h1></legend>
+            <p id="result"></p>
+            <form id="myform" action="noaction.php" class="form1" method="post">
+                <div>
+                    <label for="fname">First name:<sup>*</sup></label>
+                    <input type="text" name="fname" id="fname" placeholder="First name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="lname">Last name:<sup>*</sup></label>
+                    <input type="text" name="lname" id="lname" placeholder="Last name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email:<sup>*</sup></label>
+                    <input type="email" name="email" id="email" placeholder="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="dob">Date of Barth:</label>
+                    <input type="date" name="dob" id="dob">
+                </div>
+                <br>
+                <div><label for="">Gender:<sup>*</sup></label>
+                    <label>Male</label>
+                    <input type="radio" name="gen" id="gen" value="Male" checked>
+                    <label>Female</label>
+                <input type="radio" name="gen" id="gen" value="Female">
+                <label>Other</label>
+                <input type="radio" name="gen" id="gen" value="Other">
+            </div>
+            <br>
+            <div>
+                Address: <br><textarea name="add" id="add" cols="30" rows="10" placeholder="Address"></textarea>
+            </div>
+            <br>
+            <div>
+              
+                <label for="id num">ID Number:<sup>*</sup></label>
+                <input type="number" name="id num" id="id num" required>
+            </div>
+            <br>
+            <div>
+                <label for="pasw">Password:<sup>*</sup></label>
+                <input type="password" name="pasw" id="pasw" required>
+            </div>
+            <br>
+            <div>
+                You have bike and Car?
+                <label for="bike">Bike</label>
+                <input type="checkbox" name="bike" id="bike">
+                <label for="car">car</label>
+                <input type="checkbox" name="car" id="car">
+                
+            </div>
+            <br>
+            <div>
+                Select Your Fav color
+                <label for="fav col"></label>
+                <input type="color" name="fav col" id="col">
+            </div>
+            <br>
+            <div>
+                Uplode Your rezum:<sup>*</sup>
+                <label for="rezum"></label>
+                <input type="file" name="rezum" id="rezum" required>
+            </div>
+            <br>
+            <input  class="botton" type="submit" value="submit now" onclick="formsubmit(event)" >
+            <input class="botton" type="reset" value="reset now">
+        </fieldset>
+        </form>
+    </div>
+    
+    <script>
+        var myform = document.getElementsBytd("myform");
+        var result = document.getElementsBytd("result");
+        function formsubmit(event){
+            event.preventDefault();
+            myform.submit();
+            result.innerHTML= "<b> The button is pressed and formis sumitted </b>"
+
+        }
+
+
+    
+    </script>
+    
+</body>
+
+</html>
