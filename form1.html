@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lon in</title>
+  <style>
+    body{
+        background-image: linear-gradient(90deg, rgb(28, 77, 240) , rgb(5, 119, 52));
+    }
+    .input{
+        width: 100%;
+    }
+
+    a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    .btn{
+        padding: 5px 15px;
+        background-color: #bacbf7;
+        border: 2PX solid black;
+        border-radius: 5px;
+    }
+    .btn:hover{
+        padding: 5px 15px;
+        background-color: #a0bafa;
+        color: aliceblue;
+        border: 2PX solid black;
+        border-radius: 7px;
+    }
+    .contenar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+    }
+    .form1{
+        background: rgba(0, 0, 0, 0.2);
+        color: aliceblue;
+    }
+  </style>
+ 
+</head>
+<body>
+    <div class="contenar">
+
+        <div class="form1">
+
+            
+            <form class="form1" action="noation.php">
+            <fieldset>
+                <legend>Signin</legend>
+                <label for="usreid">UsrID :</label>
+                <input class="input"  type="email" name="usreid" id="usreid" placeholder="xyz@gmail.com">
+                <br><br>
+                <label for="password">Password :</label>
+                <input class="input" type="password" name="password" id="password" placeholder="********">
+                <br><br>
+                <input type="checkbox" name="conditions" id="conditions" required>
+                <a href="#"><label for="conditions">conditions</label></a>
+                <br><br>
+                <input class="btn" type="submit" value="Login">
+                <br><br>
+                <a href="#">Signup Now</a>
+            </fieldset>
+        </form>
+    </div>
+</div>
+    
+
+</body>
+</html>
