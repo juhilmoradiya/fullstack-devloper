@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.headtop{
+    background-color: #0e6b73;
+    color: #fff;
+    text-align: center;
+    margin: 5px 20px;
+    font-size: large;
+    transition: .3s;
+}
+.headtop1{
+    background-color: #2f868c;
+    color: #fff;
+    text-align: center;
+    margin: 5px 80px;
+    transition: .3s;
+}
+.headtop:hover{
+    background-color: transparent;
+    border: 3px solid rgb(34, 76, 78);
+    color:  #2f868c;
+}
+.headtop1:hover{
+    background-color: transparent;
+    border: 3px solid rgb(34, 76, 78);
+    color: #094c52;
+}
+body{
+    background-color: #9dd4d9;
+}
+a{
+    text-decoration: none;
+
+}
+.box{
+    margin: 0px 10px;
+}
+
+
+.gelery{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 40px;
+}
+
+.mylink a{
+    display: block;
+    margin: 5px 0;
+}
+
+.myimg img{
+    border: 3px solid rgb(86, 146, 148);
+}
+.myabout h2 {
+    color:cadetblue;
+    margin: 5px 0;
+}
